@@ -1,0 +1,271 @@
+
+html {
+    font-size: 16px; /* This sets 1rem = 16px */
+  }
+  
+  :root {
+    /* Background color */  
+  --background-color: #f0f0f0;
+  --background-color-light: #ffffff;
+  --hover-color: #e8e8e8;
+  
+   /* Primary and Secondary Colors */
+      --primary-color: #2170F4;
+      --secondary-color: #2170F4;
+      --tertiary-color: #333;
+    
+  /* Button paddings */
+      --primary-btn-padding: 16px 32px;
+      --secondary-btn-padding: 8px 16px;
+      --tertiary-btn-padding: 8px 8px 8px 4px;
+  
+  /* Button docorations*/    
+  --primary-btn-border: 0px solid #f75605;
+  --secondary-btn-border: 1.5px solid #f75605;
+  
+  /* border radius */
+  --primary-btn-border-radius: 40px;
+  --card-border-radius: 12px;
+  
+  /*card-padding*/
+  --card-padding: 20px;
+  /*box-shadows*/
+  --card-shadow: 0px 2px 15px 10px #808080;
+  
+  /* line separater */
+  --line-separater: 1.5px solid #dedede;
+    
+  
+  /* Font Colors */
+  --font-color-primary: #333;
+  --btn-font-color: #fff;
+    
+  
+      /* Font Sizes */
+      --font-size-h1: 3rem;
+      --font-size-h2: 2rem;
+      --font-size-p: 1rem;
+      --font-size-btn: 1rem;
+      --font-size-small: 0.875rem;
+    
+      /* Font Weights */
+      --font-weight-light: 300;
+      --font-weight-normal: 400;
+      --font-weight-semibold: 500;
+      --font-weight-bold: 700;
+      --font-weight-extra-bold: 800;
+    
+      /* Line Heights */
+      --line-height-normal: normal;
+      --line-height-loose: 1.5;
+  
+      h1 {
+          font-size: var(--font-size-h1);
+          color: var(--font-color-primary);
+          line-height: var(--line-height-normal);
+          margin: 0px;
+          font-family: "Roboto", sans-serif;
+          
+      }
+  
+      h2{
+          font-size: var(--font-size-h2);
+          color: var(--font-color-primary);
+          line-height: var(--line-height-normal);
+          margin: 0px;
+          font-family: "Roboto", sans-serif;
+        
+      }
+  
+      p{
+          font-size: var(--font-size-p);
+          color: var(--font-color-primary);
+          line-height: var(--line-height-loose);
+          margin: 0px;
+          font-family: "Roboto", sans-serif;
+    
+      }
+      input[type="color"] {
+          border: none;
+          outline: none;
+          border-radius: var(--card-border-radius);
+          background: var(--background-color-light);
+          outline: var(--line-separater);
+          padding: 4px;
+          height: 80px;
+          width:100%;
+          &:hover{
+              cursor: pointer;
+              background: var(--hover-color);
+              outline: var(--line-separater);
+          }
+        }
+  
+        .primary-button{
+          display: flex;
+        justify-content: center;
+          background: var(--primary-color);
+          color: var(--btn-font-color);
+          padding: var(--primary-btn-padding);
+          border: var(--primary-btn-border);
+          border-radius: var(--primary-btn-border-radius);
+          font-size: var(--font-size-btn);
+          cursor: pointer;
+        }
+
+
+/* template styles */
+
+/* template palette */
+--template-primary-color: #A94E87;
+--template-background-1-color: #FFDFF3;
+--template-background-2-color: #FFF8FD;
+--template-typography-dark-color: #333;
+--template-typography-light-color: #fff;
+
+/* intro block */
+.intro{
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    align-items: center;
+    background: var(--template-background-1-color);
+    text-align: center;
+}
+
+.template-button{
+    display: flex;
+    justify-content: center;
+    background-color: var(--template-primary-color);
+    color: var(--template-typography-light-color);
+
+    padding: var(--primary-btn-padding);
+    border: var(--primary-btn-border);
+    border-radius: var(--primary-btn-border-radius);
+    font-size: var(--font-size-btn);
+    font-weight: 600;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    gap: 20px;
+    align-items: center;
+    background: var(--template-background-2-color);
+    text-align: center;
+    
+}
+
+.product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px;
+    gap: 20px;
+    background: var(--template-background-2-color);
+    text-align: center;
+}
+
+.item-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    
+} 
+    }
+  
+    
+  
+  body{
+      height: 100vh;
+      background-color: var(--background-color);
+  }
+  
+  
+  .content-container{
+      display: grid;
+      width: 60%;
+      margin: 40px auto;
+      gap: 20px;
+      grid-template-columns: 1fr 2fr;
+  }
+  
+  
+  .color-calculator{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .editor{
+    display: flex;
+    flex-direction: column;
+    max-height: fit-content;
+    gap: 20px;
+    background: #fff;
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+  }
+  
+  .palette-list{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  
+  }
+  .palette{
+    display: flex;
+    flex-direction: row;
+    background: #fff;
+    gap: 4px;
+    border:var(--line-separater);
+    border-radius: var(--card-border-radius);
+    padding: 4px;
+    position: relative;
+
+    &:hover{
+        cursor: pointer;
+        background: #efefef;}
+
+    &:active{
+        background: #e9e9e9;;
+    }
+  }
+  .palette-selected{
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    background: #e5efff;
+    border: solid 1.5px var(--primary-color);
+    border-radius: var(--card-border-radius);
+    padding: 4px;
+    position: relative;
+
+  }
+
+  .checkbox{
+    position: absolute;
+    top: 30%;
+    right: 5%;
+  }
+  .hide{
+    display: none;
+  }
+
+
+  .box{
+    width: 40px;
+    height: 40px;
+    border-radius: var(--card-border-radius);
+    border: var(--line-separater)
+  }
+  .primary-color{
+    background-color: #A94E87;
+  }
+
+  .template{
+    border-radius: var(--card-border-radius);
+    border: var(--line-separater);
+    overflow: hidden;
+  }
